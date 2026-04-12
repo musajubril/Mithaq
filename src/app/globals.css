@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* DEFAULT / SERENE (SAGE) */
+    --primary: #635f40;
+    --primary-container: #b2ac88;
+    --on-primary: #ffffff;
+    --secondary: #475e6b;
+    --secondary-container: #d9e2e9;
+    --on-secondary: #ffffff;
+    --tertiary: #ba1a1a;
+    --surface: #faf9f4;
+    --surface-bright: #ffffff;
+    --surface-dim: #f5f4ef;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #f5f4ef;
+    --surface-container: #efeee9;
+    --surface-container-high: #e9e8e3;
+    --surface-container-highest: #e3e2de;
+    --on-surface: #2f3e46;
+    --on-surface-variant: #475e6b;
+    --outline: #635f40;
+    --outline-variant: rgba(99, 95, 64, 0.2);
+    --error: #ba1a1a;
+    --error-container: #ffdad6;
+    --font-secondary: var(--font-manrope);
+  }
+
+  [data-theme="heritage"] {
+    --primary: #9f393b;
+    --primary-container: #bf5152;
+    --on-primary: #ffffff;
+    --secondary: #fed4c8;
+    --secondary-container: #f8f2ef;
+    --tertiary: #ffdbd0;
+    --surface: #fef8f4;
+    --surface-bright: #ffffff;
+    --surface-dim: #f8f2ef;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #f8f2ef;
+    --surface-container: #f3ede9;
+    --surface-container-high: #e7e1de;
+    --surface-container-highest: #ddc0be;
+    --on-surface: #1d1b19;
+    --on-surface-variant: #504444;
+    --outline: #9f393b;
+    --outline-variant: rgba(159, 57, 59, 0.15);
+    --font-secondary: var(--font-plus-jakarta);
+  }
+
+  [data-theme="rose"] {
+    --primary: #7B5455;
+    --primary-container: #D4A5A5;
+    --on-primary: #ffffff;
+    --secondary: #486555;
+    --secondary-container: #F4EDE5;
+    --surface: #FFF8F1;
+    --surface-bright: #ffffff;
+    --surface-dim: #F4EDE5;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #F4EDE5;
+    --surface-container: #EEE4DB;
+    --surface-container-high: #E8DBCD;
+    --surface-container-highest: #E2D2BF;
+    --on-surface: #3E2723;
+    --on-surface-variant: #504444;
+    --outline: #7B5455;
+    --outline-variant: rgba(123, 84, 85, 0.15);
+    --font-secondary: var(--font-plus-jakarta);
+  }
+
+  [data-theme="midnight"] {
+    --primary: #f2ca50;
+    --primary-container: #d4af37;
+    --on-primary: #3c2f00;
+    --secondary: #494a38;
+    --secondary-container: #1c1b1b;
+    --surface: #131313;
+    --surface-bright: #2a2a2a;
+    --surface-dim: #000000;
+    --surface-container-lowest: #000000;
+    --surface-container-low: #1c1b1b;
+    --surface-container: #262626;
+    --surface-container-high: #333333;
+    --surface-container-highest: #404040;
+    --on-surface: #f5f2f0;
+    --on-surface-variant: #e5dac5;
+    --outline: #f2ca50;
+    --outline-variant: rgba(242, 202, 80, 0.3);
+    --font-secondary: var(--font-inter);
+  }
+
+  [data-theme="editorial"] {
+    --primary: #486173;
+    --primary-container: #8fa9bc;
+    --on-primary: #ffffff;
+    --secondary: #cbe6fa;
+    --secondary-container: #f4f3f1;
+    --surface: #faf9f7;
+    --surface-bright: #ffffff;
+    --surface-dim: #f4f3f1;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #f4f3f1;
+    --surface-container: #eeedeb;
+    --surface-container-high: #e3e2e0;
+    --surface-container-highest: #d8d7d5;
+    --on-surface: #1a1c1b;
+    --on-surface-variant: #486173;
+    --outline: #486173;
+    --outline-variant: rgba(72, 97, 115, 0.15);
+    --font-secondary: var(--font-public-sans);
+  }
+}
+
+@layer components {
+  .editorial-shadow {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.04);
+  }
+
+  [data-theme="serene"] .editorial-shadow {
+    box-shadow: 0 12px 32px rgba(47, 62, 70, 0.06);
+  }
+
+  [data-theme="heritage"] .editorial-shadow {
+    box-shadow: 0 12px 32px rgba(29, 27, 25, 0.06);
+  }
+
+  [data-theme="rose"] .editorial-shadow {
+    box-shadow: 0 12px 32px rgba(62, 39, 35, 0.06);
+  }
+
+  [data-theme="midnight"] .editorial-shadow {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  [data-theme="editorial"] .editorial-shadow {
+    box-shadow: 0 12px 32px rgba(26, 28, 27, 0.06);
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-noto-serif), serif;
+}
+
+.font-sans {
+  font-family: var(--font-secondary), sans-serif;
+}

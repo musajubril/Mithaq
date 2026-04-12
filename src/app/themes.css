@@ -1,0 +1,139 @@
+@layer base {
+  :root {
+    /* DEFAULT: Serene Sanctuary (Sage Green) inspired by sakinah ui sage green design system.md */
+    --primary: #635f40;
+    --primary-container: #b2ac88;
+    --on-primary: #ffffff;
+    --on-primary-container: #444024;
+    
+    --secondary: #5f6049;
+    --secondary-container: #e5e4c7;
+    --on-secondary: #ffffff;
+    --on-secondary-container: #66664f;
+    
+    --surface: #faf9f4;
+    --surface-bright: #faf9f4;
+    --surface-dim: #dbdad5;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #f5f4ef;
+    --surface-container: #efeee9;
+    --surface-container-high: #e9e8e3;
+    --surface-container-highest: #e3e3de;
+    
+    --on-surface: #1b1c19;
+    --on-surface-variant: #49473d;
+    --outline: #7a776c;
+    --outline-variant: #cbc6b9;
+    
+    --error: #ba1a1a;
+    --error-container: #ffdad6;
+    --on-error: #ffffff;
+    --on-error-container: #93000a;
+
+    --font-serif: "Noto Serif", serif;
+    --font-sans: "Manrope", sans-serif;
+    
+    --editorial-shadow: 0 12px 32px rgba(47, 62, 70, 0.06);
+    --backdrop-blur: 12px;
+  }
+
+  [data-theme="midnight"] {
+    --primary: #f2ca50;
+    --primary-container: #d4af37;
+    --on-primary: #3c2f00;
+    --on-primary-container: #221b00;
+    
+    --surface: #131313;
+    --surface-bright: #1c1b1b;
+    --surface-dim: #0a0a0a;
+    --surface-container-lowest: #000000;
+    --surface-container-low: #1c1b1b;
+    --surface-container: #2a2a2a;
+    --surface-container-high: #333333;
+    --surface-container-highest: #3d3d3d;
+    
+    --on-surface: #e5e2e1;
+    --on-surface-variant: #d0c5af;
+    --outline: #938f99;
+    --outline-variant: #444746;
+    
+    --font-serif: "Noto Serif", serif;
+    --font-sans: "Inter", sans-serif;
+    --editorial-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  [data-theme="rose"] {
+    --primary: #7B5455;
+    --primary-container: #D4A5A5;
+    --on-primary: #ffffff;
+    --on-primary-container: #3E2723;
+    
+    --surface: #FFF8F1;
+    --surface-bright: #FFF8F1;
+    --surface-dim: #F4EDE5;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #FBF4ED;
+    --surface-container: #F4EDE5;
+    --surface-container-high: #EEE7DF;
+    --surface-container-highest: #E8E1D9;
+    
+    --on-surface: #3E2723;
+    --on-surface-variant: #504444;
+    --outline: #857373;
+    --outline-variant: #D8C2C2;
+    
+    --font-serif: "Noto Serif", serif;
+    --font-sans: "Plus Jakarta Sans", sans-serif;
+    --editorial-shadow: 0px 12px 32px rgba(62, 39, 35, 0.06);
+  }
+
+  [data-theme="heritage"] {
+    --primary: #9f393b;
+    --primary-container: #bf5152;
+    --on-primary: #ffffff;
+    --on-primary-container: #3d060a;
+    
+    --surface: #fef8f4;
+    --surface-bright: #fef8f4;
+    --surface-dim: #e7e1de;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #f8f2ef;
+    --surface-container: #f3ede9;
+    --surface-container-high: #ede7e3;
+    --surface-container-highest: #e7e1de;
+    
+    --on-surface: #1d1b19;
+    --on-surface-variant: #524443;
+    --outline: #857371;
+    --outline-variant: #ddc0be;
+    
+    --font-serif: "Noto Serif", serif;
+    --font-sans: "Plus Jakarta Sans", sans-serif;
+    --editorial-shadow: 0px 12px 32px rgba(29, 27, 25, 0.06);
+  }
+
+  [data-theme="serene"] {
+    --primary: #486173;
+    --primary-container: #8fa9bc;
+    --on-primary: #ffffff;
+    --on-primary-container: #051e2d;
+    
+    --surface: #faf9f7;
+    --surface-bright: #faf9f7;
+    --surface-dim: #e3e2e0;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #f4f3f1;
+    --surface-container: #efeeeb;
+    --surface-container-high: #e9e8e6;
+    --surface-container-highest: #e3e2e0;
+    
+    --on-surface: #1a1c1b;
+    --on-surface-variant: #40484d;
+    --outline: #70787d;
+    --outline-variant: #c2c7cc;
+    
+    --font-serif: "Noto Serif", serif;
+    --font-sans: "Public Sans", sans-serif;
+    --editorial-shadow: 0 12px 32px rgba(29, 27, 25, 0.06);
+  }
+}

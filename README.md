@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mithaq (مِيثَاق) — The Sacred Sanctuary
 
-## Getting Started
+![Mithaq Hero](public/images/serene_couple_hero_1775507565933.png)
 
-First, run the development server:
+> **"A quiet digital sanctuary for intentional connection."**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Mithaq is a premium relationship reflection platform designed for couples who seek to move beyond surface-level interaction. Built with a focus on "Editorial Romance" and intentionality, it provides a sacred space for shared growth, honest transparency, and collective vision.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ The Mithaq Aesthetic
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Mithaq follows a strict **"Modern Epistolary"** design system, rooted in the following principles:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*   **The No-Line Rule**: We avoid harsh borders and dividers. Hierarchy is established through subtle tonal shifts (`surface-container-low` vs `surface-container-lowest`) and intentional whitespace.
+*   **Editorial Romance**: Combining serif typography (`Noto Serif`) with a minimalist interface that feels like a high-end art journal.
+*   **Sacred Sanctuary**: A serene, distraction-free environment that prioritizes the user's emotional state.
 
-## Learn More
+![Editorial Connection](public/images/editorial_connection_hands_1775507431855.png)
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*   **Intelligent Questionnaire**: A multi-path reflection journey that resumes exactly where you left off, navigating the depths of finance, family, values, and more.
+*   **Partner Sync & Reveal**: Answers are hidden until both partners have reflected, creating a powerful "reveal" moment that encourages honest vulnerability.
+*   **Category Summary Hubs**: Editorial-style dashboards for each category, featuring AI-generated "Shared Sanctuary" syntheses of your connection.
+*   **Daily Intentions**: AI-powered daily prompts designed to spark meaningful conversation in under 5 minutes.
+*   **The Mithaq Covenant**: A dynamically generated, printable "Charter of Intention" to formalize your shared path (Currently in Beta).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![Reflection Journal](public/images/editorial_journal_flowers_1775511760732.png)
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+*   **Framework**: Next.js 14 (App Router)
+*   **Real-time**: Socket.io for live typing and presence indicators
+*   **AI**: Google Gemini Pro & Flash (via `@google/genai`)
+*   **Animations**: Framer Motion
+*   **Database**: MongoDB with Mongoose
+*   **Authentication**: NextAuth.js
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🏗️ Getting Started
+
+### Prerequisites
+
+*   Node.js 18+
+*   MongoDB Instance
+*   Gemini API Key
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/musa/mithaq.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Configure Environment:
+   Create a `.env.local` file with the following:
+   ```env
+   MONGODB_URI=your_mongodb_uri
+   NEXTAUTH_SECRET=your_secret
+   GEMINI_API_KEY=your_key
+   ```
+
+4. Run Development:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+*“Connection is the art of being seen without being judged.”* — **Mithaq**

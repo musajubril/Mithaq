@@ -20,10 +20,11 @@ export function SocketProvider({ children }: { children: React.ReactNode }) {
   const [partnerTyping, setPartnerTyping] = useState<string | null>(null);
 
   useEffect(() => {
+    /* Socket functionality temporarily disabled
     if (session?.user?.id) {
       const userId = session.user.id;
       const partnerId = (session.user as any).partnerId;
-      const newSocket = io(); // Connects to same host/port by default
+      const newSocket = io(process.env.NEXT_PUBLIC_SOCKET_URL || "http://localhost:3001");
       
       newSocket.on("connect", () => {
         console.log(`[CLIENT] Socket connected! Joining as ${userId} with partner ${partnerId}`);
@@ -34,9 +35,17 @@ export function SocketProvider({ children }: { children: React.ReactNode }) {
         console.error(`[CLIENT] Socket connection error: ${err.message}`);
       });
 
-      newSocket.on("partnerStatus", ({ online }: { online: boolean }) => {
-        console.log(`[CLIENT] Received partnerStatus: ${online ? "Online" : "Offline"}`);
+      newSocket.on("partnerStatus", ({ online, isUpdate }: { online: boolean; isUpdate?: boolean }) => {
+        console.log(`[CLIENT] Received partnerStatus: ${online ? "Online" : "Offline"}, isUpdate: ${isUpdate}`);
         setPartnerOnline(online);
+        
+        // Only show toast if it's a real-time update and partner is now online
+        if (online && isUpdate) {
+          toast.success("Your partner is now online!", {
+            icon: "👋",
+            duration: 4000
+          });
+        }
       });
 
       newSocket.on("notification", ({ title, message }: { title: string; message: string }) => {
@@ -63,6 +72,7 @@ export function SocketProvider({ children }: { children: React.ReactNode }) {
         newSocket.disconnect();
       };
     }
+    */
   }, [session?.user?.id, (session?.user as any)?.partnerId]);
 
   return (

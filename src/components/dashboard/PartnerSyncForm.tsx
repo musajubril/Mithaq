@@ -26,17 +26,19 @@ export default function PartnerSyncForm({ userCode }: { userCode: string }) {
         // Update the JWT session on the frontend
         await update({ partnerId: state.partnerId });
 
-        // Emit the socket event with new metadata
+        /* Temporarily disabled socket emission
         socket.emit("partnerLinked", { 
           userId: (session.user as any).id, 
           partnerId: state.partnerId, 
-          partnerName: state.partnerName 
+          partnerName: state.partnerName,
+          userName: session.user.name
         });
+        */
         
-        // Give time for socket emission before hard refresh
+        // Give time for socket emission and toast before hard refresh
         setTimeout(() => {
           window.location.reload();
-        }, 1000);
+        }, 3000);
       }
     };
 

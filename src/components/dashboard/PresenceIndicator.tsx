@@ -9,6 +9,7 @@ interface Props {
 }
 
 export default function PresenceIndicator({ isPartnerLinked }: Props) {
+  return null; // Temporarily disabled partner online/offline indicator
   const { partnerOnline, partnerTyping } = useSocket();
   
   if (!isPartnerLinked) return null;

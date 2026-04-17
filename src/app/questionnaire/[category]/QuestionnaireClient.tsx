@@ -54,7 +54,7 @@ export default function QuestionnaireClient({ category, initialQuestions, initia
     }
   }, [currentIndex, currentQuestion.type, answers, currentQuestion._id]);
 
-  // Emit typing event
+  /* Temporarily disabled socket emission
   useEffect(() => {
     if (socket && session?.user?.id) {
       socket.emit("typing", { 
@@ -64,6 +64,7 @@ export default function QuestionnaireClient({ category, initialQuestions, initia
       });
     }
   }, [currentIndex, socket, session, category]);
+  */
 
   const handleSelect = async (value: string | number) => {
     setIsSaving(true);

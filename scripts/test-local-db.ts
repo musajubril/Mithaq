@@ -6,6 +6,9 @@ async function check() {
   try {
     await mongoose.connect(localUri);
     console.log("Connected to local MongoDB");
+    if (!mongoose.connection.db) {
+      throw new Error("Database connection not established");
+    }
     const collections = await mongoose.connection.db.listCollections().toArray();
     console.log("Collections:", collections.map(c => c.name));
     for (const coll of collections) {

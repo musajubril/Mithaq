@@ -35,7 +35,7 @@ export default function ReflectionComparison({
             {initial}
           </div>
           <span className="font-label text-sm uppercase tracking-widest text-on-surface-variant">
-            {name}'s Reflection
+            {name}&apos;s Reflection
           </span>
         </div>
         
